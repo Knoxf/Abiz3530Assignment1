@@ -1,7 +1,7 @@
 # Abiz3530 Assignment 1 tesk 3
 # Mini farm management app
 # Name: Zuhao Fang. Student Number: 7876277
-
+import math
 # get name from user
 firstName = str(input("Whats your first name: "))
 lastName = str(input("Whats you last name: "))
@@ -28,8 +28,11 @@ for x in farmSpot:
 
 print("--------------------------------")
 print("Only break line to finnish integer part")
-print(66+ 77)
-print()
+print(66 + 77)
+print(3 ** 5 )
+print(7 * 6 / 45)
+print(abs(4))
+print(math.sqrt(81))
 
 
 
