@@ -1,26 +1,37 @@
-import math
+# Abiz3530 Assignment 1 tesk 3
+# Mini farm management app
+# Name: Zuhao Fang. Student Number: 7876277
 
-#Get two number from keyboard
-inputNumberA = int(input("Enter Number A: "))
-inputNumberB = float(input("Enter Number B: "))
+# get name from user
+firstName = str(input("Whats your first name: "))
+lastName = str(input("Whats you last name: "))
+farmName = "Welcome " + firstName + " " + lastName + "'s mini farm"
 
-#Integer cal
-print("A + B =" , inputNumberA + inputNumberB)
-print("A * B =" , inputNumberA * inputNumberB)
-print("A ** B =" , inputNumberA ** inputNumberB)
-print("A % B =" , inputNumberA % inputNumberB)
-print("Abs of A =", abs(inputNumberA))
-print("Abs of B =", abs(inputNumberB))
-print("Sqrt of A =" , math.sqrt(inputNumberA))
-print("Sqrt of B =" , math.sqrt(inputNumberB))
-print("----------------------------------") # break line
+# get each spot on farm
+spotOne = int(input("How many plant you wanna set in your first Spot?"))
+spotTwo = int(input("How many plant you wanna set in your second Spot?"))
+spotThree = int(input("How many plant you wanna set in your third Spot?"))
+spotFour = int(input("How many plant you wanna set in your fourth Spot?"))
+farmSpot = [spotOne, spotTwo, spotThree, spotFour]
+totalplant = spotOne + spotTwo + spotThree + spotFour # get total number of plant
 
-#Variable - Integer
-print("Number of A:" , inputNumberA)
-print(type(inputNumberA))
-print("----------------------------------") #break line
+# each spot fill what kind of plant
+spotDict = {'Spot 1':'Apple tree', 'Spot 2':'Banana tree', 'Spot 3':'Orange tree', 'Spot 4':'Peach tree'}
 
-#Variable - Float
-print("Number of B:" , inputNumberB)
-print(type(inputNumberB))
-print("----------------------------------") #break line
+print(spotDict)
+print(farmName)
+
+for x in farmSpot:
+     for key in spotDict.keys():
+        print(key + " have ", x, " " + spotDict[key])
+
+
+print("--------------------------------")
+print("Only break line to finnish integer part")
+print(66+ 77)
+print()
+
+
+
+
+
